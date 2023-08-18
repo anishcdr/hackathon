@@ -9,27 +9,41 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <style>
-      nav{
-        background-color: #019DDA;
-      }
-      body{
-        background-color: #BAE7F8;
-      }
-      .nav-link
-      {
-        font-size: large;
-        color: black;
-      }
+        nav {
+            background-color: #019DDA;
+        }
+
+        body {
+            background-color: #BAE7F8;
+        }
+
+        .nav-link {
+            font-size: large;
+            color: black;
+        }
+
+        .badge {
+            color: #4464AD;
+        }
     </style>
-    
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
 </head>
 
 <body>
-    
-      <nav class="navbar navbar-expand-lg navbar-dark" >
-        
-        <a class="navbar-brand" href="#"><img src="sdgs.jpeg" alt="ArjunCR" width="50%" height="10%" ></a>
-        
+    <script src="logic.js"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="#"><img src="sdgs.jpeg" alt="ArjunCR" width="50%" height="10%"></a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,43 +51,55 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">Home   </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="https://indianexpress.com/section/sports/">About</a>
+                    <a class="nav-link" href=""></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="https://indianexpress.com/section/entertainment/">Entertainment</a>
+                    <a class="nav-link" href=""></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="https://indianexpress.com/section/lifestyle/">Lifestyle</a>
+                    <a class="nav-link" href=""></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="https://indianexpress.com/section/political-pulse/">Political Pulse</a>
+                    <a class="nav-link" href=""> </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="https://indianexpress.com/section/cities/">Cities</a>
+                    <a class="nav-link" href=""></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="https://indianexpress.com/section/technology/">Technology</a>
+                    <a class="nav-link" href=""></a>
                 </li>
             </ul>
-            
+
         </div>
     </nav>
 
     <div class="container my-3">
-        <center><h2>Top News <span class="badge badge-secondary"><h3>by BMSIT </h3></span></h2></center>
-        <hr>
-        <div class="accordion" id="newsAccordion">
-            
+        <center>
+            <h2>The 4 Sustainable Development Goals <span class="badge badge-secondary">
+                    <h3>by The A-Team</h3>
+                </span></h2>
+        </center>
+    </div>
 
+    <p class="card">
+        <a class="card-header" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Link with href
+        </a>
+        <button class="card-header" type="button" data-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Button with data-bs-target
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-          crossorigin="anonymous"></script>
+      </div>
 
-</div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+
 </body>
-          
-   
